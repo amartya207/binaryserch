@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int arr[]={0,1,2,3,4,5};
+int key=4;
+int low =0;
+int high=5-1;
+while(low<=high){
+   int med=low+high;
+    if(arr[med]==key){
+        cout<<med+1;
+        break;
+    }
+    else if(arr[med]<key){
+        low=med+1;
+    }
+    else
+    high=med-1;
+}
+    return 0;
+}
